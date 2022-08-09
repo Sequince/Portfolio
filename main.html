@@ -7,6 +7,7 @@
     <title>Seq's Adventure</title>
 
     <style>
+        //Move to style sheet later
         .center {
             display: block;
             margin-left: auto;
@@ -42,6 +43,27 @@
         body { 
             background-color: black;
             color: red; 
+            font-family: 'Georgia, serif';
+        }
+
+        #myHeader1 {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        
+        #myHeader2 {
+            padding-top: 50px;
+            padding-left: 200px;
+        }
+
+        #myHeader3 {
+            padding-top: 50px;
+            padding-left: 500px;
+            padding-bottom: 500px;
+        }
+
+        #myIntro {
+            font-family: 'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro';
         }
     </style>
 
@@ -53,7 +75,11 @@
     </ul>
 </head>
 <body>
-    <h1>Hello §éq</h1>
+    <p id="myIntro">Konnichiwa/こんにちは!<br>
+        (Good Morning!)</p>
+    <h3 id="myHeader1">Jacob Thomas ...</h3>
+    <h3 id="myHeader2">Developer, Innovator, Automation Adventurer</h3>
+    <h3 id="myHeader3">& Lifetime Scholar</h3>
     <img src="https://sequince.w3spaces.com/Images/Mog.png" alt="Moogle picture" style="width:300px; height:300px;" class= "center">
 </body>
 </html>
