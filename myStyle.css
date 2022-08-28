@@ -1,0 +1,170 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('/Fonts/sazanami-gothic.otf');
+}
+
+@font-face {
+    font-family: myJapaneseFont;
+    src: url('/Fonts/sazanami-gothic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: mainIntro;
+    src: url('/Fonts/DynaPuff-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: topIntro;
+    src: url('/Fonts/RampartOne-Regular.ttf');
+}
+
+#myIntro {
+    font-family: myFirstFont;
+}
+
+#topnav {
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    width: -20%;
+    right: 0%;
+    display: block;
+    transition: top 1.0s;
+}
+
+#topnav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#topnav a:hover {
+    background-color: rgb(118, 140, 240);
+    color: yellow;
+}
+
+body { 
+    background-color: black;
+    color: rgb(194, 31, 31); 
+    font-family: 'Georgia, serif';
+}
+
+#myHeader1 {
+    font-family: topIntro;
+    font-size: 250%;
+    padding-top: 100px;
+    /*padding-left: 100px;*/
+    padding-left: 10%;
+}
+
+#myHeader2 {
+    font-family: mainIntro;
+    font-size: 300%;
+    color: aqua;
+    padding-top: 100px;
+    padding-left: 20%;
+}
+
+#myHeader3 {
+    font-family: topIntro;
+    padding-left: 60%;
+    padding-bottom: 500px;
+}
+
+.mogImage {
+    display: block;
+    margin-left: 69%;
+}
+
+#about {
+/*          font-family: myJapaneseFont;
+    color:rgb(217, 255, 2);
+*/
+    text-align: center;
+    font-size: medium;
+    padding-bottom: 100px;
+}
+
+#koni {
+    font-family: myJapaneseFont;
+    color:rgb(76, 82, 165)
+}
+
+#projects {
+    padding-top: 10px;
+    padding-left: 125px;
+}
+
+.textContainer {
+    background-color: white;
+    border-radius: 50px;
+    padding: 45px;
+    display: table;
+    margin: 0%;
+    border: 0;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#preAbout {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#preProjects {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#preContact {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#preInfo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formatting for description of Romaji project */
+.romajiDesc {
+    padding-top: 15%;
+}
+
+/* Formatting for description of Time Watch project */
+.romajiDesc {
+    padding-top: 3%;
+}
+
+/* Sets the background colour for the input text field on focus */
+input:focus {
+    background-color:rgb(250, 233, 0);
+}
+
+/* Formatting coloumns in projects section of main page*/
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    /* height: 300px; */
+}
+
+.row:after {
+    content: none;
+    display: table;
+    clear: both;
+}
