@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" Content-Type = "text/html">
     <link rel="icon" href="Mog.ico">
     <title>Seq's Adventure</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://sequince.s3.ca-central-1.amazonaws.com/myStyle.css">  -->
+    <link rel="stylesheet" type="text/css" href="/css/myStyle.css">
 
     <style>
         
@@ -14,7 +15,8 @@
 
     <div id="topnav">
         <a href="#preContact">Contact</a>
-        <a href="#preProjects">Projects</a>
+        <a href="#preProjects" onclick="setFocusToRomajiTextbox(); return false;" >Projects</a>
+        <a href="#preSkills">Skills</a>
         <a href="#preAbout">About Me</a>
         <a href="#top">Home</a>
     </div>
@@ -30,6 +32,7 @@
         <br><nobr style="font-size: 25px;"> &nbsp &nbsp &nbsp About Me</nobr>
     </div>
     <br><br>
+
 
 
     <!-- About Me -->
@@ -48,6 +51,103 @@
         applications and countless everyday life improvements with it!  &nbspKeeping active, I run 15k+ every week, workout every<b>.</b>single<b>.</b>day<b>.</b><br>
         Over the last year I've been learning Japanese!  &nbsp Life is too short to waste it.
     </div>
+
+
+
+    <div style="padding-top: 550px;"></div>
+    <div id="preSkills"><nobr style="font-size: 15px;">--- &nbsp A few of my </nobr>
+        <br><nobr style="font-size: 25px;"> &nbsp &nbsp &nbsp Skills</nobr>
+    </div>
+    <br><br>
+    
+    <!-- My Skills -->
+    <table class="textContainer">
+        <tr>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_HTML5.png" alt="- [HTML5 Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_CSS.svg.png" alt="- [CSS Site Badge] -" style="width:55%; height:55%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_JavaScript.png" alt="- [JavaScript Site Badge] -" style="width:45%; height:45%;" class="skillsBorders">
+            </td>
+            <td >
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/seq_AHK_Green.png" alt="- [AutoHotKey Site Badge] -" style="width:40%; height:40%;" class="skillsBorders">
+            </td>
+            <td >
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_Git.png" alt="- [Git Site Badge] -" style="width:45%; height:45%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_VSCode.png" alt="- [VS Code Site Badge] -" style="width:30%; height:30%;" class="skillsBorders">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                HTML5<br>
+            </td>
+            <td>
+                CSS<br>
+            </td>
+            <td>
+                JavaScript<br>
+            </td>
+            <td>
+                AutoHotKey<br>
+            </td>
+            <td>
+                Git<br>
+            </td>
+            <td>
+                VS Code<br>
+            </td>
+        </tr>
+        
+        <tr><td> </td></tr>
+
+        <tr>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_CSharp.png" alt="- [CSharp Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_Oracle.png" alt="- [Oracel Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_dotNet.png" alt="- [.Net Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_Java.png" alt="- [Java Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_Windows.png" alt="- [Windows Site Badge] -" style="width:50%; height:50%;" class="skillsBorders">
+            </td>
+            <td>
+                <img src="https://sequince.s3.ca-central-1.amazonaws.com/Images/Seq_MySQL.png" alt="- [mySQL Site Badge] -" style="width:50%; height:50%; padding-top:10px; padding-bottom:10px;" class="skillsBorders">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                CSharp<br>
+            </td>
+            <td>
+                Oracle<br>
+            </td>
+            <td>
+                .Net<br>
+            </td>
+            <td>
+                Java<br>
+            </td>
+            <td>
+                Windows<br>
+            </td>
+            <td>
+                MySQL<br>
+            </td>
+        </tr>
+    </table>
 
     <div style="padding-top: 550px;"></div>
     <div id="preProjects"><nobr style="font-size: 15px;">--- &nbsp Take a glance at my </nobr>
@@ -68,7 +168,7 @@
         <td class="column">
             <form action="process.php" method="post" id="projects">
                 <fieldset style="width: 50px;" id="preInfo">
-                    <input type="text" name="convertValue" id="test">
+                    <input type="text" name="convertValue" id="romajiText">
                     <br>
                     <input accesskey="k" type="radio" id="select_language" name="select_language" value="katakana" checked>
                     <label for="katakana"><u>K</u>atakana</label><br>
@@ -139,6 +239,13 @@
 
 
     <script>
+
+        //document.getElementById('romajiText').focus();
+
+        function setFocusToRomajiTextbox(){
+            document.getElementById('romajiText').focus();
+        }
+
         /*
         window.onscroll = function() {scrollFunction()};
 

@@ -1,21 +1,21 @@
 @font-face {
     font-family: myFirstFont;
-    src: url('/Fonts/sazanami-gothic.otf');
+    src: url('https://sequince.s3.ca-central-1.amazonaws.com/Fonts/sazanami-gothic.otf');
 }
 
 @font-face {
     font-family: myJapaneseFont;
-    src: url('/Fonts/sazanami-gothic.otf') format('opentype');
+    src: url('https://sequince.s3.ca-central-1.amazonaws.com/Fonts/sazanami-gothic.otf') format('opentype');
 }
 
 @font-face {
     font-family: mainIntro;
-    src: url('/Fonts/DynaPuff-Regular.ttf') format('opentype');
+    src: url('https://sequince.s3.ca-central-1.amazonaws.com/Fonts/DynaPuff-Regular.ttf') format('opentype');
 }
 
 @font-face {
     font-family: topIntro;
-    src: url('/Fonts/RampartOne-Regular.ttf');
+    src: url('https://sequince.s3.ca-central-1.amazonaws.com/Fonts/RampartOne-Regular.ttf');
 }
 
 #myIntro {
@@ -106,13 +106,32 @@ body {
     display: table;
     margin: 0%;
     border: 0;
+    width: 50%;
     box-sizing: border-box;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Border around each skill item */
+.skillsBorders {
+    border: 5px solid rgb(223, 61, 61);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.skillsBorders:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#preAbout {
+    display: block;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#preAbout {
+#preSkills {
     display: block;
     width: 50%;
     margin-left: auto;
@@ -161,6 +180,12 @@ input:focus {
     width: 50%;
     padding: 10px;
     /* height: 300px; */
+}
+
+/* Formatting coloumns in skills section of main page*/
+.skillsColumn {
+    float: left;
+    padding: 5px;
 }
 
 .row:after {
